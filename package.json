@@ -1,15 +1,15 @@
 {
   "name": "qvac-local-study-buddy",
   "version": "1.0.0",
-  "description": "",
+  "description": "A local AI study assistant built with Tether's QVAC SDK and Electron",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron ."
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Jackey Kusakari",
+  "license": "MIT",
   "type": "module",
   "dependencies": {
     "@qvac/sdk": "^0.20.0"
