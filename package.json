@@ -2,9 +2,10 @@
   "name": "qvac-local-study-buddy",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
   },
   "keywords": [],
   "author": "",
@@ -12,5 +13,8 @@
   "type": "module",
   "dependencies": {
     "@qvac/sdk": "^0.20.0"
+  },
+  "devDependencies": {
+    "electron": "^44.4.5"
   }
 }

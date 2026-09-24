@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>QVAC Local Study Buddy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <header class="header">
+      <div>
+        <h1>QVAC Local Study Buddy</h1>
+        <p>AI-powered studying running directly on your device.</p>
+      </div>
+
+      <div class="local-badge">
+        ● ON-DEVICE AI
+      </div>
+    </header>
+
+    <main class="content">
+
+      <section class="status-card">
+        <div>
+          <strong>QVAC Model</strong>
+          <span id="status">Not loaded</span>
+        </div>
+
+        <button id="loadButton">
+          Load QVAC Model
+        </button>
+      </section>
+
+      <section class="question-card">
+
+        <label for="question">
+          Ask your study question
+        </label>
+
+        <textarea
+          id="question"
+          rows="6"
+          placeholder="Example: Explain photosynthesis in simple terms for a student."
+        ></textarea>
+
+        <button
+          id="askButton"
+          disabled
+        >
+          Ask QVAC AI
+        </button>
+
+      </section>
+
+      <section class="answer-card">
+
+        <div class="answer-header">
+          <h2>AI Answer</h2>
+          <span id="thinking">Ready</span>
+        </div>
+
+        <div id="answer">
+          Load the QVAC model, then ask a question.
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer>
+      <span>Powered by Tether QVAC SDK</span>
+      <span>Local inference • No cloud AI API</span>
+    </footer>
+
+  </div>
+
+  <script src="renderer.js"></script>
+
+</body>
+</html>
